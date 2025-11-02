@@ -52,6 +52,115 @@
     html {
         scroll-behavior: smooth;
     }
+
+    /* Problem Section */
+    .problem-section {
+        background: white;
+    }
+
+    .problem-card {
+        background: rgb(63, 64, 63);
+        padding: 30px;
+        border-radius: 12px;
+        border-left: 4px solid var(--primary-color);
+        margin-bottom: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s;
+    }
+
+    .problem-card:hover {
+        transform: translateY(5px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .problem-icon {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 15px;
+    }
+
+    /* Services Section */
+        .service-card {
+            background: rgb(63, 64, 63);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            height: 100%;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            margin-bottom: 0;
+        }
+
+
+        /* Process Section */
+
+        .process-step {
+            position: relative;
+            padding: 30px;
+            background: rgb(63, 64, 63);
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+
+        .process-step:hover {
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+
+        .process-number {
+            position: absolute;
+            top: -20px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #004958, cyan);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .process-step h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
 </style>
 
 
@@ -515,69 +624,171 @@
                                                     </div>
                                                 </div>
                                                 <!-- Problem Section -->
-                                                <section>
-                                                    <div class="container">
-                                                        <div class="row mb-5">
-                                                            <div class="col-lg-12 mx-auto ">
-                                                                <h3 class="section-title" style="color: aqua;">Are These
-                                                                    IT Challenges Holding Your Business Back?</h3>
-                                                                <p class="section-subtitle">We understand the technology
-                                                                    struggles businesses face every day</p>
+
+                                                <div class="container mt-4">
+                                                    <div class="row mb-5">
+                                                        <div class="col-lg-12 mx-auto ">
+                                                            <h3 class="section-title" style="color: aqua;">Are These
+                                                                IT Challenges Holding Your Business Back?</h3>
+                                                            <p class="section-subtitle">We understand the technology
+                                                                struggles businesses face every day</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <div class="problem-card">
+                                                                <i class="fas fa-exclamation-triangle problem-icon"></i>
+                                                                <h4>Outdated Systems</h4>
+                                                                <p>Legacy technology slowing down your operations
+                                                                    and limiting growth potential</p>
                                                             </div>
                                                         </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="problem-card">
-                                                                    <i
-                                                                        class="fas fa-exclamation-triangle problem-icon"></i>
-                                                                    <h4>Outdated Systems</h4>
-                                                                    <p>Legacy technology slowing down your operations
-                                                                        and limiting growth potential</p>
-                                                                </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <div class="problem-card">
+                                                                <i class="fas fa-shield-alt problem-icon"></i>
+                                                                <h4>Security Concerns</h4>
+                                                                <p>Worried about data breaches, cyber threats, and
+                                                                    compliance requirements</p>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="problem-card">
-                                                                    <i class="fas fa-shield-alt problem-icon"></i>
-                                                                    <h4>Security Concerns</h4>
-                                                                    <p>Worried about data breaches, cyber threats, and
-                                                                        compliance requirements</p>
-                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <div class="problem-card">
+                                                                <i class="fas fa-chart-line problem-icon"></i>
+                                                                <h4>Scalability Issues</h4>
+                                                                <p>Technology infrastructure that can't keep up with
+                                                                    business growth</p>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="problem-card">
-                                                                    <i class="fas fa-chart-line problem-icon"></i>
-                                                                    <h4>Scalability Issues</h4>
-                                                                    <p>Technology infrastructure that can't keep up with
-                                                                        business growth</p>
-                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <div class="problem-card">
+                                                                <i class="fas fa-money-bill-wave problem-icon"></i>
+                                                                <h4>High IT Costs</h4>
+                                                                <p>Spending too much on technology without seeing
+                                                                    clear ROI</p>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="problem-card">
-                                                                    <i class="fas fa-money-bill-wave problem-icon"></i>
-                                                                    <h4>High IT Costs</h4>
-                                                                    <p>Spending too much on technology without seeing
-                                                                        clear ROI</p>
-                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <div class="problem-card">
+                                                                <i class="fas fa-users-cog problem-icon"></i>
+                                                                <h4>Lack of Expertise</h4>
+                                                                <p>Missing in-house technical knowledge to make
+                                                                    strategic decisions</p>
                                                             </div>
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="problem-card">
-                                                                    <i class="fas fa-users-cog problem-icon"></i>
-                                                                    <h4>Lack of Expertise</h4>
-                                                                    <p>Missing in-house technical knowledge to make
-                                                                        strategic decisions</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="problem-card">
-                                                                    <i class="fas fa-clock problem-icon"></i>
-                                                                    <h4>System Downtime</h4>
-                                                                    <p>Frequent technical issues disrupting productivity
-                                                                        and revenue</p>
-                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-4">
+                                                            <div class="problem-card">
+                                                                <i class="fas fa-clock problem-icon"></i>
+                                                                <h4>System Downtime</h4>
+                                                                <p>Frequent technical issues disrupting productivity
+                                                                    and revenue</p>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </section>
+                                                </div>
+
+
+                                                <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Our IT Consulting Services</h2>
+                    <p class="section-subtitle">Comprehensive technology solutions tailored to your business needs</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>IT Strategy & Planning</h3>
+                        <p>Develop comprehensive technology roadmaps aligned with your business goals. We help you make informed decisions about technology investments and digital transformation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Migrate to the cloud, optimize cloud infrastructure, and implement hybrid solutions. Reduce costs and improve scalability with modern cloud technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Protect your business with comprehensive security assessments, implementation of security protocols, and ongoing monitoring to prevent cyber threats.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Infrastructure Management</h3>
+                        <p>Design, implement, and maintain robust IT infrastructure. Ensure your systems are reliable, scalable, and optimized for performance.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Custom Software Development</h3>
+                        <p>Build tailored software solutions that solve your unique business challenges. From web applications to enterprise systems.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>IT Support & Maintenance</h3>
+                        <p>24/7 technical support, system monitoring, and proactive maintenance to keep your business running smoothly without interruption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Process Section -->
+    <section class="process-section section-padding">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Our Simple 3-Step Process</h2>
+                    <p class="section-subtitle">How we work with you to achieve technology success</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h4><i class="fas fa-search text-primary me-2"></i>Discovery & Assessment</h4>
+                        <p>We start by understanding your business, current IT infrastructure, challenges, and goals. We conduct a thorough assessment to identify opportunities for improvement.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h4><i class="fas fa-lightbulb text-primary me-2"></i>Strategy & Planning</h4>
+                        <p>Based on our findings, we develop a customized technology strategy and implementation plan. We present clear recommendations with ROI projections and timelines.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h4><i class="fas fa-rocket text-primary me-2"></i>Implementation & Support</h4>
+                        <p>We execute the plan with minimal disruption to your operations. Our team provides ongoing support, training, and optimization to ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
                                                 <!-- <h3 class="text">
                                                     service features
                                                 </h3>
